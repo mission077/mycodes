@@ -1,0 +1,15 @@
+
+n = int(input("Enter the number:"))
+b = int(input("Enter the number:"))
+while (n <= 10):
+    print("   ",n,end = ('\t'))
+    n +=1
+
+print("")
+print("")
+while (b <= 10):
+    print(b)
+
+    b += 1
+
+
