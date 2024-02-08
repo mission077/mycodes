@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../html-css-course-master/starter/02-HTML-Fundamentals"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "myProgress"
+  }
+}

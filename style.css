@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+  border-top: solid 10px #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* background-color: red; */
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 80px; */
+}
+.post-header {
+  margin-bottom: 40px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  /* display: inline; */
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* display: inline; */
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+article {
+  margin-bottom: 60px;
+}
+.link {
+  margin-left: 20px;
+  font-weight: bold;
+}
+/* footer p {
+  font-size: 16px;
+} */
+
+/*article header p {
+  font-style: italic;
+}*/
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.laura-image {
+  margin-bottom: 20px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.related author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* body {
+  background-color: orange;
+} */
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  /* color: red; */
+}
+
+/*misconception*/
+article p:first-child {
+  color: red;
+}
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  /* color:#777; */
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* Resolving Conflict
+#Copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
+
+nav {
+  font-size: 18px;
+}
+
+.post-img {
+  width: 50%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+
+  text-align: center;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  top: -150px;
+  left: 80%;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* 
+p::first-line {
+  color: red;
+} */
+
+h3 + p::first-line {
+  color: red;
+}
+
+h2 {
+  position: relative;
+}
+h2::after {
+  content: "TOP";
+  border: 10px solid red;
+  border-top-color: black;
+  border-radius: 50%;
+  color: black;
+  font-size: 16px;
+  font-style: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+  animation: spin 2s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Floats */
+.laura-image {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 80px; */
+  padding-top: 10px;
+  float: left;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+  position: relative;
+  top: -300px;
+}
+footer {
+  background-color: yellow;
+  clear: both;
+}
+.pic {
+  width: 65%;
+  height: auto;
+  float: left;
+  margin-bottom: 200px;
+}
+.question {
+  /* background-color: blue; */
+
+  float: right;
+  position: absolute;
+  left: 60%;
+  border: 10px solid white;
+  border-top-color: #1098ad;
+  text-align: center;
+  width: 300px;
+  box-sizing: border-box;
+}
+
+.answer {
+  text-align: left;
+}
+.button {
+}
